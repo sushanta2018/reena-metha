@@ -8,6 +8,12 @@ const config = {
   ],
   theme: {
     extend: {
+      // container: {
+      //   screens: {
+      //     'xl': '1200px',
+      //     '2xl': '1440px',
+      //   },
+      // },
       colors: {
         black: '#160020',
         primary_01: '#C25858'

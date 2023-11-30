@@ -47,65 +47,7 @@ header .navigation-menu ul li a.active {
   top: -43px;
   right: 0;
 }
-.banner-content {
-  margin-top: 20px;
-}
-.banner-content h1 {
-  font-size: 82px;
-  line-height: 82px;
-  font-weight: 800;
-  color: rgb(var(--foreground-rgb));
-  
-}
-.banner-content h1 span {
-  color: var(--primary-Color-01);
-}
-.banner-content p {
-  color: var(--black);
-  font-size: 20px;
-  line-height: 30px;
-  opacity: 0.8;
-}
 
-.item {
-  border-radius: 12px;
-  background: var(--white);
-  border: 1px solid rgba(0, 0, 0, 0.20);
-  padding: 20px;
-}
-.item .item-img {
-  width: 100%;
-  height: 187px;
-  border-radius: 8px;
-  overflow: hidden;
-}
-.item .item-img .btn {
-  width: 37px;
-  height: 37px;
-  transform: translate(-50%, -50%);
-}
-.item .item-content h2 {
-  font-family: var(--font-work-sans);
-  font-size: 18px;
-  line-height: 1.5;
-  font-weight: 500;
-  color: var(--black);
-  margin-top: 12px;
-}
-.item .item-content p {
-  font-family: var(--font-open-sans);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
-  color: var(--black);
-  opacity: 0.8;
-}
-.slider-wrapper {
-  margin-top: 52px;
-}
-.slider-wrapper .slick-dots {
-  /* width: 480px; */
-}
 .slider-wrapper .slick-dots li button {
   width: 10px;
   height: 10px;
@@ -138,6 +80,7 @@ header .navigation-menu ul li a.active {
 .slider-wrapper .slick-current .item .item-content h2, .slider-wrapper .slick-current .item .item-content p {
   color: var(--white);
 }
+
 .slider-profile .profile {
   width: 557px;
   height: 659px;
@@ -145,12 +88,45 @@ header .navigation-menu ul li a.active {
   bottom: -78px;
   right: 0;
 }
-.slider-profile .slider-wrapper {
-  /* width: 1024px; */
-}
+
 .slider-profile {
   padding-right: 490px;
 }
+
+.about-section:after {
+  content: '';
+  background-image: url('../assets/images/about-bg.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 291px;
+  height: 472px;
+  transform: translateY(-50%);
+}
+.about-section:before {
+  content: '';
+  background-image: url('../assets/images/about-us-gradient.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+  background-position: top;
+}
+
+.about-wrapper .about-content {
+  width: calc(100% - 530px);
+}
+
+.musical-universe-wrapper {
+  background-image: url('../assets/images/musical-bg.svg');
+}
+
+/* Responsive */
 
 @media (max-width: 1199px) {
   .slider-profile .profile {
@@ -192,6 +168,10 @@ header .navigation-menu ul li a.active {
     z-index: 2;
     opacity: 0.8;
   }
+
+  .about-wrapper .about-content {
+    width: 100%;
+  }
 }
 @media (max-width: 991px) {
   .slider-profile {
@@ -219,11 +199,6 @@ header .navigation-menu ul li a.active {
   }
 }
 @media (max-width: 767px) {
-  .banner-content h1 {
-    font-size: 52px;
-    line-height: 52px;
-  }
-  
   .slider-profile .profile {
     width: 100%;
   }

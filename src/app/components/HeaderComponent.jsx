@@ -3,7 +3,7 @@ import LogoImg from '../../assets/images/logo.svg';
 import BarImg from '../../assets/images/bar.svg';
 import Image from 'next/image';
 
-export default function Header() {
+export default function HeaderComponent() {
   const [isMenu, setIsMenu] = useState(false);
   return (
     <header className='w-full fixed top-0 left-0 z-20'>

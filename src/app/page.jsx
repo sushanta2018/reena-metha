@@ -2,7 +2,7 @@
 
 import AboutUs from './components/AboutUs';
 import CollaboratesGenres from './components/CollaboratesGenres';
-import Header from './components/Header';
+import HeaderComponent from './components/HeaderComponent';
 import HeroBanner from './components/HeroBanner';
 import MusicalUniverse from './components/MusicalUniverse';
 
@@ -54,7 +54,7 @@ export default function Home() {
 
   return (
     <>
-      <Header />
+      <HeaderComponent />
       <HeroBanner />
       <AboutUs />
       <MusicalUniverse />

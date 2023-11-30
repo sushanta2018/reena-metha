@@ -6,7 +6,7 @@ import MusicUniverse04 from '../../assets/images/musical-universe/music04.svg';
 
 export default function MusicalUniverse() {
   return (
-    <section className="musical-universe-wrapper bg-no-repeat bg-cover mt-[45px] py-[80px]">
+    <section className="musical-universe-wrapper white-shade-bg bg-no-repeat bg-cover mt-[45px] py-[80px] relative">
       <div className="container px-4 mx-auto 2xl:max-w-[1140px]">
         <h2 className='font-workSans text-[38px] md:text-[48px] font-bold text-center mb-[30px] md:mb-[50px]'>Musical <span className="text-primary_01">Universe</span></h2>
         <div className="md:gap-[24px] gap-[20px] md:columns-2">

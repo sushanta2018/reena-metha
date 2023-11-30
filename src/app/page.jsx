@@ -1,9 +1,11 @@
 "use client";
 
 import AboutUs from './components/AboutUs';
+import AestheticComponent from './components/AestheticComponent';
 import CollaboratesGenres from './components/CollaboratesGenres';
 import HeaderComponent from './components/HeaderComponent';
 import HeroBanner from './components/HeroBanner';
+import LatestNews from './components/LatestNews';
 import MusicalUniverse from './components/MusicalUniverse';
 
 export default function Home() {
@@ -59,6 +61,8 @@ export default function Home() {
       <AboutUs />
       <MusicalUniverse />
       <CollaboratesGenres />
+      <AestheticComponent />
+      <LatestNews />
     </>
   )
 }

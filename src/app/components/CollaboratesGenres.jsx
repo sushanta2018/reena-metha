@@ -3,7 +3,7 @@ import CollaborateImg from '../../assets/images/collaborate.svg';
 
 export default function CollaboratesGenres() {
   return (
-    <section className="collaborates-wrapper bg-no-repeat bg-cover py-[80px]">
+    <section className="collaborates-wrapper bg-center bg-no-repeat bg-cover py-[80px]">
       <div className="container px-4 mx-auto 2xl:max-w-[1140px]">
         <div className="md:flex">
           <h2 className="md:w-6/12 font-workSans text-[38px] md:mb-[52px] mb-[20px] md:text-[48px] font-extrabold leading-[48px] md:leading-[58px] text-black"><span className="text-primary_01">Collaborates</span> Across Genres</h2>

@@ -1,10 +1,10 @@
 "use client";
 
-import AboutUs from './components/about-us';
-import CollaboratesGenres from './components/collaborates-genres';
-import Header from './components/header';
-import HeroBanner from './components/hero-banner';
-import MusicalUniverse from './components/musical-universe';
+import AboutUs from './components/AboutUs';
+import CollaboratesGenres from './components/CollaboratesGenres';
+import Header from './components/Header';
+import HeroBanner from './components/HeroBanner';
+import MusicalUniverse from './components/MusicalUniverse';
 
 export default function Home() {
   let settings = {

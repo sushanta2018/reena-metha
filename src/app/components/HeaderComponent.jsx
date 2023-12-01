@@ -6,11 +6,11 @@ import Image from 'next/image';
 export default function HeaderComponent() {
   const [isMenu, setIsMenu] = useState(false);
   return (
-    <header className='w-full fixed top-0 left-0 z-20'>
-      <nav className="bg-white py-2.5">
+    <header className='w-full fixed top-0 left-0 z-20 shadow-[0_0px_7px_rgba(0,0,0,0.1)]'>
+      <nav className="bg-white px-[15px] py-[20px]">
         <div className="flex justify-between items-center mx-auto container px-4 2xl:max-w-[1140px]">
-          <a href="#" className="flex items-center">
-            <Image src={LogoImg} className="mr-3 logo" alt="Reena Mehta" />
+          <a href="#" className="flex items-center md:h-[35px] h-[29px]">
+            <Image src={LogoImg} className="mr-3 w-full h-full" alt="Reena Mehta" />
           </a>
           <div className="flex items-center lg:order-2 ">
             <a href="#" onClick={() => setIsMenu(!isMenu)}><Image src={BarImg} alt="" /></a>
@@ -19,19 +19,19 @@ export default function HeaderComponent() {
             <div className='navigation-menu-inner'>
               <ul className="flex flex-col lg:flex-row m-0">
                 <li>
-                  <a href="#" className="block active py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01" aria-current="page">Home</a>
+                  <a href="#" className="block active py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]" aria-current="page">Home</a>
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01">About Us</a>
+                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">About Us</a>
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01">Songs</a>
+                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Songs</a>
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01">Collaborating</a>
+                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Collaborating</a>
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01">Gallery</a>
+                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Gallery</a>
                 </li>
               </ul>
             </div>

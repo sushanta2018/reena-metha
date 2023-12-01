@@ -57,7 +57,7 @@ export default function HeroBanner() {
 
   return (
     <>
-      <div className='banner-section'>
+      <div className='banner-section min-h-[732px] bg-cover pt-[130px] pb-[78px]'>
         <div className="container mx-auto px-4 2xl:max-w-[1140px]">
           <div className='banner-wrapper relative md:w-[726px] '>
             <div className='banner-content max-w-[536px] relative z-10 mt-[20px]'>
@@ -140,16 +140,16 @@ export default function HeroBanner() {
         <div className='music-logo-section m-auto relative z-10 mt-[-30px] mb-[90px]'>
           <div className='card-wrapper justify-center flex rounded-[16px] bg-white px-[25px] py-[34px] shadow-[0px_0px_32px_0px_rgba(0,0,0,0.12)]'>
             <ul className='music-brand-list flex flex-wrap items-center'>
-              <li className='px-[20px]'>
+              <li className='px-[20px] mb-[10px] md:mb-[0px]'>
                 <Image alt="" src={MusicImg01} />
               </li>
-              <li className='px-[20px]'>
+              <li className='px-[20px] mb-[10px] md:mb-[0px]'>
                 <Image alt="" src={MusicImg02} />
               </li>
-              <li className='px-[20px]'>
+              <li className='px-[20px] mb-[10px] md:mb-[0px]'>
                 <Image alt="" src={MusicImg03} />
               </li>
-              <li className='px-[20px]'>
+              <li className='px-[20px] mb-[10px] md:mb-[0px]'>
                 <Image alt="" src={MusicImg04} />
               </li>
               <li className='px-[20px]'>

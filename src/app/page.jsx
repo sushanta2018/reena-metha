@@ -1,11 +1,11 @@
 "use client";
 
 import AboutUs from './components/AboutUs';
-import AestheticComponent from './components/AestheticComponent';
+import Aesthetic from './components/Aesthetic';
 import CollaboratesGenres from './components/CollaboratesGenres';
-import ConcertComponent from './components/ConcertComponent';
-import FooterComponent from './components/Footer';
-import HeaderComponent from './components/HeaderComponent';
+import Concert from './components/Concert';
+import Footer from './components/Footer';
+import Header from './components/Header';
 import HeroBanner from './components/HeroBanner';
 import LatestNews from './components/LatestNews';
 import MusicalUniverse from './components/MusicalUniverse';
@@ -14,15 +14,15 @@ export default function Home() {
 
   return (
     <>
-      <HeaderComponent />
+      <Header />
       <HeroBanner />
       <AboutUs />
       <MusicalUniverse />
       <CollaboratesGenres />
-      <AestheticComponent />
-      <ConcertComponent />
+      <Aesthetic />
+      <Concert />
       <LatestNews />
-      <FooterComponent />
+      <Footer />
     </>
   )
 }

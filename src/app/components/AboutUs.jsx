@@ -8,8 +8,8 @@ export default function AboutUs() {
       <div className="container px-4 mx-auto 2xl:max-w-[1140px]">
         <div className="about-wrapper flex flex-wrap items-center max-w-[1200px] mx-auto relative lg:pb-[140px] md:py-[90px] py-[60px] z-10">
           <div className="about-img md:w-[450px] lg:w-[530px] w-[94%] mx-auto relative">
-            <Image src={ProfileImg} alt="" />
-            <Image src={ProfileAwardImg} alt="" className="absolute md:bottom-[-30px] md:right-[-30px] lg:w-[178px] md:w-[148px] bottom-[-10px] right-[-10px] w-[80px]"/>
+            <Image src={ProfileImg} alt="about-us-profile" />
+            <Image src={ProfileAwardImg} alt="about-us-profile-award" className="absolute md:bottom-[-30px] md:right-[-30px] lg:w-[178px] md:w-[148px] bottom-[-10px] right-[-10px] w-[80px]"/>
           </div>
           <div className="about-content lg:pl-[90px] lg:mt-[0px] md:mt-[90px] mt-[50px]">
             <h2 className="font-workSans text-[38px] mb-[16px] md:text-[48px] font-extrabold leading-[48px] md:leading-[58px] text-black">Who Is <span className="text-primary_01">Reena Mehta</span></h2>

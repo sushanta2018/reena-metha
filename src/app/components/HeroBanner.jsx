@@ -1,6 +1,4 @@
 import Image from 'next/image';
-import ItemImg from '../../assets/images/item.png';
-import PlayImg from '../../assets/images/play.png';
 import ProfileImg from '../../assets/images/reena_mehta.png';
 import MusicImg01 from '../../assets/images/music-01.png';
 import MusicImg02 from '../../assets/images/music-02.png';
@@ -8,6 +6,8 @@ import MusicImg03 from '../../assets/images/music-03.png';
 import MusicImg04 from '../../assets/images/music-04.png';
 import MusicImg05 from '../../assets/images/music-05.png';
 import Slider from "react-slick";
+import { HeroBannerJSON } from '../shared/Helper';
+import HeroBannerCard from '../shared/HeroBannerCard';
 
 export default function HeroBanner() {
   let settings = {
@@ -72,66 +72,13 @@ export default function HeroBanner() {
           </div>
           <div className='slider-wrapper mt-[52px]'>
             <Slider {...settings}>
-              <div>
-                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
-                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
-                    <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
-                  </div>
-                  <div className='item-content'>
-                    <h2 className='text-black font-workSans text-[18px] font-medium leading-[24px] mt-[12px]'>Meri Ashiqui</h2>
-                    <p className='text-black font-openSans text-[16px] leading-[22px] opacity-[0.8]'>Reena Mehta</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
-                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
-                    <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
-                  </div>
-                  <div className='item-content'>
-                    <h2 className='text-black font-workSans text-[18px] font-medium leading-[24px] mt-[12px]'>Meri Ashiqui</h2>
-                    <p className='text-black font-openSans text-[16px] leading-[22px] opacity-[0.8]'>Reena Mehta</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
-                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
-                    <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
-                  </div>
-                  <div className='item-content'>
-                    <h2 className='text-black font-workSans text-[18px] font-medium leading-[24px] mt-[12px]'>Meri Ashiqui</h2>
-                    <p className='text-black font-openSans text-[16px] leading-[22px] opacity-[0.8]'>Reena Mehta</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
-                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
-                    <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
-                  </div>
-                  <div className='item-content'>
-                    <h2 className='text-black font-workSans text-[18px] font-medium leading-[24px] mt-[12px]'>Meri Ashiqui</h2>
-                    <p className='text-black font-openSans text-[16px] leading-[22px] opacity-[0.8]'>Reena Mehta</p>
-                  </div>
-                </div>
-              </div>
-              <div>
-                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
-                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
-                    <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
-                  </div>
-                  <div className='item-content'>
-                    <h2 className='text-black font-workSans text-[18px] font-medium leading-[24px] mt-[12px]'>Meri Ashiqui</h2>
-                    <p className='text-black font-openSans text-[16px] leading-[22px] opacity-[0.8]'>Reena Mehta</p>
-                  </div>
-                </div>
-              </div>
+              {
+                HeroBannerJSON.map((data) => {
+                  return (
+                    <HeroBannerCard item={data} />
+                  )
+                })
+              }
             </Slider>
           </div>
         </div>
@@ -141,19 +88,19 @@ export default function HeroBanner() {
           <div className='card-wrapper justify-center flex rounded-[16px] bg-white px-[25px] md:py-[34px] py-[25px] shadow-[0px_0px_32px_0px_rgba(0,0,0,0.12)]'>
             <ul className='music-brand-list flex flex-wrap items-center mx-[-20px]'>
               <li className='px-[20px] mb-[10px] md:mb-[0px]'>
-                <Image alt="" src={MusicImg01} />
+                <Image alt="zee-music" src={MusicImg01} />
               </li>
               <li className='px-[20px] mb-[10px] md:mb-[0px]'>
-                <Image alt="" src={MusicImg02} />
+                <Image alt="music" src={MusicImg02} />
               </li>
               <li className='px-[20px] mb-[10px] md:mb-[0px]'>
-                <Image alt="" src={MusicImg03} />
+                <Image alt="t-series" src={MusicImg03} />
               </li>
               <li className='px-[20px] mb-[10px] md:mb-[0px]'>
-                <Image alt="" src={MusicImg04} />
+                <Image alt="eros_now" src={MusicImg04} />
               </li>
               <li className='px-[20px]'>
-                <Image alt="" src={MusicImg05} />
+                <Image alt="hungama_music" src={MusicImg05} />
               </li>
             </ul>
           </div>

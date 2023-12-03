@@ -8,7 +8,7 @@ import Image06 from '../../assets/images/aesthetic/image06.png';
 import Image07 from '../../assets/images/aesthetic/image07.png';
 import Image08 from '../../assets/images/aesthetic/image08.png';
 
-export default function AestheticComponent() {
+export default function Aesthetic() {
   return (
     <section className="aesthetic-world-wrapper white-shade-bg bg-no-repeat bg-cover md:py-[80px] py-[50px] relative" id="gallery">
       <div className="container px-4 mx-auto 2xl:max-w-[1140px]">
@@ -17,32 +17,32 @@ export default function AestheticComponent() {
         <div className="md:gap-[24px] gap-[20px] md:columns-3">
           <div>
             <div className='rounded-2xl overflow-hidden md:mb-[25px] mb-[20px]'>
-              <Image className="w-full lg:h-[398px] md:h-[268px] object-cover object-top" src={Image01} alt="" />
+              <Image className="w-full lg:h-[398px] md:h-[268px] object-cover object-top" src={Image01} alt="image01" />
             </div>
             <div className='rounded-2xl overflow-hidden md:mb-[0px] mb-[20px]'>
-              <Image className="w-full lg:h-[398px] md:h-[268px] object-cover object-top" src={Image02} alt="" />
+              <Image className="w-full lg:h-[398px] md:h-[268px] object-cover object-top" src={Image02} alt="image02" />
             </div>
           </div>
           <div>
             <div className='rounded-2xl overflow-hidden md:mb-[25px] mb-[20px]'>
-              <Image className="w-full lg:h-[186px] md:h-[122px] object-cover object-top" src={Image03} alt="" />
+              <Image className="w-full lg:h-[186px] md:h-[122px] object-cover object-top" src={Image03} alt="image03" />
             </div>
             <div className='rounded-2xl overflow-hidden md:mb-[25px] mb-[20px]'>
-              <Image className="w-full lg:h-[186px] md:h-[122px] object-cover object-top" src={Image04} alt="" />
+              <Image className="w-full lg:h-[186px] md:h-[122px] object-cover object-top" src={Image04} alt="image04" />
             </div>
             <div className='rounded-2xl overflow-hidden md:mb-[25px] mb-[20px]'>
-              <Image className="w-full lg:h-[186px] md:h-[122px] object-cover object-top" src={Image05} alt="" />
+              <Image className="w-full lg:h-[186px] md:h-[122px] object-cover object-top" src={Image05} alt="image05" />
             </div>
             <div className='rounded-2xl overflow-hidden md:mb-[0px] mb-[20px]'>
-              <Image className="w-full lg:h-[186px] md:h-[122px] object-cover object-top" src={Image06} alt="" />
+              <Image className="w-full lg:h-[186px] md:h-[122px] object-cover object-top" src={Image06} alt="image06" />
             </div>
           </div>
           <div>
             <div className='rounded-2xl overflow-hidden md:mb-[25px] mb-[20px]'>
-              <Image className="w-full lg:h-[398px] md:h-[268px] object-cover object-top" src={Image07} alt="" />
+              <Image className="w-full lg:h-[398px] md:h-[268px] object-cover object-top" src={Image07} alt="image07" />
             </div>
             <div className='rounded-2xl overflow-hidden'>
-              <Image className="w-full lg:h-[398px] md:h-[268px] object-cover object-top" src={Image08} alt="" />
+              <Image className="w-full lg:h-[398px] md:h-[268px] object-cover object-top" src={Image08} alt="image08" />
             </div>
           </div>
         </div>

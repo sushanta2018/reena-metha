@@ -4,7 +4,7 @@ import BarImg from '../../assets/images/bar.svg';
 import Image from 'next/image';
 import { Link, animateScroll as scroll } from "react-scroll";
 
-export default function HeaderComponent() {
+export default function Header() {
   const [isMenu, setIsMenu] = useState(false);
   return (
     <header className='w-full fixed top-0 left-0 z-20 shadow-[0_0px_7px_rgba(0,0,0,0.1)]'>
@@ -14,7 +14,7 @@ export default function HeaderComponent() {
             <Image src={LogoImg} className="mr-3 w-full h-full" alt="Reena Mehta" />
           </a>
           <div className="lg:hidden flex">
-            <a href="#" onClick={() => setIsMenu(!isMenu)}><Image src={BarImg} alt="" /></a>
+            <a href="#" onClick={() => setIsMenu(!isMenu)}><i className='icon-bar text-primary_01 text-[32px]'></i></a>
           </div>
           <div className={`justify-between items-center w-full lg:flex lg:w-auto lg:order-1 navigation-menu ${isMenu && 'active'}`}>
             <div className='navigation-menu-inner'>
@@ -27,7 +27,7 @@ export default function HeaderComponent() {
                     smooth={true}
                     offset={-70}
                     duration= {500}
-                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px] cursor-pointer"
                     onClick={() => setIsMenu(false)}
                   >Home</Link>
                 </li>
@@ -39,7 +39,7 @@ export default function HeaderComponent() {
                     smooth={true}
                     offset={-70}
                     duration= {500}
-                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px] cursor-pointer"
                     onClick={() => setIsMenu(false)}
                   >About us</Link>
                 </li>
@@ -51,7 +51,7 @@ export default function HeaderComponent() {
                     smooth={true}
                     offset={-70}
                     duration= {500}
-                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px] cursor-pointer"
                     onClick={() => setIsMenu(false)}
                   >Songs</Link>
                 </li>
@@ -63,7 +63,7 @@ export default function HeaderComponent() {
                     smooth={true}
                     offset={-70}
                     duration= {500}
-                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px] cursor-pointer"
                     onClick={() => setIsMenu(false)}
                   >Collaborating</Link>
                 </li>
@@ -75,7 +75,7 @@ export default function HeaderComponent() {
                     smooth={true}
                     offset={-70}
                     duration= {500}
-                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px] cursor-pointer"
                     onClick={() => setIsMenu(false)}
                   >Gallery</Link>
                 </li>

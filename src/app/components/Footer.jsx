@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { Link, animateScroll as scroll } from "react-scroll";
 import FooterLogoImg from '../../assets/images/logo.svg';
 import FooterAbstractImg from '../../assets/images/footer-abstract.png';
 
@@ -12,11 +13,56 @@ export default function FooterComponent() {
           <Image src={FooterLogoImg} alt="" className="md:w-[360px] w-[280px] m-auto"/>
           <p className="text-black font-openSans text-[16px] leading-[22px] text-center opacity-[0.8] mt-[10px] mb-[20px]">Connect with the Melody</p>
           <ul className="m-[0px] flex flex-wrap items-center justify-center">
-            <li className="mt-[15px]"><a href="#" className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]">Home</a></li>
-            <li className="mt-[15px]"><a href="#" className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]">About Us</a></li>
-            <li className="mt-[15px]"><a href="#" className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]">Songs</a></li>
-            <li className="mt-[15px]"><a href="#" className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]">Collaborating</a></li>
-            <li className="mt-[15px]"><a href="#" className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]">Gallery</a></li>
+            <li className="mt-[15px]">
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {500}
+                className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]"
+              >Home</Link>
+            </li>
+            <li className="mt-[15px]">
+              <Link
+                to="about-us"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {500}
+                className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]"
+              >About Us</Link>
+            </li>
+            <li className="mt-[15px]">
+              <Link
+                to="songs"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {500}
+                className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]"
+              >Songs</Link>
+            </li>
+            <li className="mt-[15px]">
+              <Link
+                to="collaborating"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {500}
+                className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]"
+              >Collaborating</Link>
+            </li>
+            <li className="mt-[15px]">
+              <Link
+                to="gallery"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration= {500}
+                className="px-[15px] hover:text-primary_01 text-black font-workSans font-medium text-[16px] leading-[22px]"
+              >Gallery</Link>
+            </li>
           </ul>
           <ul className="mt-[30px] flex items-center justify-center">
             <li className="p-[5px]"><a href="#" className="p-[15px] rounded-[100%] bg-[rgba(194,88,88,0.16)] flex items-center justify-center text-[22px] w-[42px] h-[42px] text-black font-workSans font-medium"><i className="icon-instagram text-primary_01"></i></a></li>

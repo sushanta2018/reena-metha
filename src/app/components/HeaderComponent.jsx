@@ -20,7 +20,6 @@ export default function HeaderComponent() {
             <div className='navigation-menu-inner'>
               <ul className="flex flex-col lg:flex-row m-0">
                 <li>
-                  {/* <a href="#" className="block active py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]" aria-current="page">Home</a> */}
                   <Link
                     activeClass="active"
                     to="home"
@@ -45,7 +44,6 @@ export default function HeaderComponent() {
                   >About us</Link>
                 </li>
                 <li>
-                  {/* <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Songs</a> */}
                   <Link
                     activeClass="active"
                     to="songs"
@@ -68,7 +66,6 @@ export default function HeaderComponent() {
                     className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
                     onClick={() => setIsMenu(false)}
                   >Collaborating</Link>
-                  {/* <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Collaborating</a> */}
                 </li>
                 <li>
                   <Link
@@ -81,7 +78,6 @@ export default function HeaderComponent() {
                     className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
                     onClick={() => setIsMenu(false)}
                   >Gallery</Link>
-                  {/* <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Gallery</a> */}
                 </li>
               </ul>
             </div>

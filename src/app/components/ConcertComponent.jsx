@@ -1,5 +1,6 @@
 import Image from "next/image";
 import LaptopImg from '../../assets/images/laptop.svg';
+import Iframe from 'react-iframe';
 
 export default function ConcertComponent() {
   return (
@@ -9,7 +10,7 @@ export default function ConcertComponent() {
         <div className="concert-video xl:w-[1015px] lg:w-[980px] md:w-[724px] w-[330px] relative m-auto">
           <Image src={LaptopImg} alt="" />
           <div className="video-group absolute top-0 left-0 w-full h-full">
-            <iframe className="w-full h-full" src="https://www.youtube.com/embed/njX2bu-_Vw4?si=uFmGLP0Cfj3PqrT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <Iframe className="w-full h-full" src="https://www.youtube.com/embed/njX2bu-_Vw4?si=uFmGLP0Cfj3PqrT8" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></Iframe>
           </div>
         </div>
       </div>

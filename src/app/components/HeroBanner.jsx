@@ -57,7 +57,7 @@ export default function HeroBanner() {
 
   return (
     <>
-      <div className='banner-section min-h-[732px] bg-cover pt-[130px] pb-[78px]'>
+      <div className='banner-section min-h-[732px] bg-cover pt-[130px] pb-[78px]' id="home">
         <div className="container mx-auto px-4 2xl:max-w-[1140px]">
           <div className='banner-wrapper relative md:w-[726px] '>
             <div className='banner-content max-w-[536px] relative z-10 mt-[20px]'>
@@ -73,9 +73,9 @@ export default function HeroBanner() {
           <div className='slider-wrapper mt-[52px]'>
             <Slider {...settings}>
               <div>
-                <div className='item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative'>
-                    <Image src={ItemImg} alt="" className='h-[187px] w-full rounded-[8px] overflow-hidden' />
+                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
+                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
+                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
                     <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
                   </div>
                   <div className='item-content'>
@@ -85,9 +85,9 @@ export default function HeroBanner() {
                 </div>
               </div>
               <div>
-                <div className='item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative'>
-                    <Image src={ItemImg} alt="" className='h-[187px] w-full rounded-[8px] overflow-hidden' />
+                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
+                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
+                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
                     <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
                   </div>
                   <div className='item-content'>
@@ -97,9 +97,9 @@ export default function HeroBanner() {
                 </div>
               </div>
               <div>
-                <div className='item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative'>
-                    <Image src={ItemImg} alt="" className='h-[187px] w-full rounded-[8px] overflow-hidden' />
+                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
+                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
+                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
                     <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
                   </div>
                   <div className='item-content'>
@@ -109,9 +109,9 @@ export default function HeroBanner() {
                 </div>
               </div>
               <div>
-                <div className='item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative'>
-                    <Image src={ItemImg} alt="" className='h-[187px] w-full rounded-[8px] overflow-hidden' />
+                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
+                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
+                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
                     <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
                   </div>
                   <div className='item-content'>
@@ -121,9 +121,9 @@ export default function HeroBanner() {
                 </div>
               </div>
               <div>
-                <div className='item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
-                  <div className='item-img relative'>
-                    <Image src={ItemImg} alt="" className='h-[187px] w-full rounded-[8px] overflow-hidden' />
+                <div className='min-h-[300] item relative z-10 rounded-[12px] bg-white p-[20px] border border-solid border-[rgba(0, 0, 0, 0.20)]'>
+                  <div className='item-img relative h-[187px] overflow-hidden rounded-[8px]'>
+                    <Image src={ItemImg} alt="" className='object-cover object-top h-full w-full' />
                     <button type='button' className='btn-play w-[35px] h-[35px] absolute top-2/4 left-2/4 translate-y-[-50%] translate-x-[-50%]'><Image src={PlayImg} alt="" className='h-full w-full' /></button>
                   </div>
                   <div className='item-content'>
@@ -137,9 +137,9 @@ export default function HeroBanner() {
         </div>
       </div>
       <div className='container mx-auto px-4 2xl:max-w-[1140px]'>
-        <div className='music-logo-section m-auto relative z-10 mt-[-30px] mb-[90px]'>
-          <div className='card-wrapper justify-center flex rounded-[16px] bg-white px-[25px] py-[34px] shadow-[0px_0px_32px_0px_rgba(0,0,0,0.12)]'>
-            <ul className='music-brand-list flex flex-wrap items-center'>
+        <div className='music-logo-section m-auto relative z-10 mt-[-30px] md:mb-[90px] mb-[60px]'>
+          <div className='card-wrapper justify-center flex rounded-[16px] bg-white px-[25px] md:py-[34px] py-[25px] shadow-[0px_0px_32px_0px_rgba(0,0,0,0.12)]'>
+            <ul className='music-brand-list flex flex-wrap items-center mx-[-20px]'>
               <li className='px-[20px] mb-[10px] md:mb-[0px]'>
                 <Image alt="" src={MusicImg01} />
               </li>

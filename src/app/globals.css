@@ -269,6 +269,9 @@ header .navigation-menu ul li a.active {
     opacity: 0.8;
   }
 
+  .about-section:before {
+    background-size: cover;
+  }
   .about-wrapper .about-content {
     width: 100%;
   }
@@ -306,6 +309,9 @@ header .navigation-menu ul li a.active {
   .about-section:before {
     background-size: cover;
   }
+  .white-shade-bg:before, .white-shade-bg:after {
+    display: none;
+  }
 
   .slider-profile .profile {
     width: 100%;
@@ -319,5 +325,11 @@ header .navigation-menu ul li a.active {
   }
   .video-group {
     padding: 8px 42px 17px 65px;
+  }
+}
+
+@media (max-width: 359px) {
+  .concert-video {
+    width: 288px;
   }
 }

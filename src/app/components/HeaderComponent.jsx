@@ -2,6 +2,7 @@ import { useState } from 'react';
 import LogoImg from '../../assets/images/logo.svg';
 import BarImg from '../../assets/images/bar.svg';
 import Image from 'next/image';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default function HeaderComponent() {
   const [isMenu, setIsMenu] = useState(false);
@@ -12,26 +13,75 @@ export default function HeaderComponent() {
           <a href="#" className="flex items-center md:h-[35px] h-[29px]">
             <Image src={LogoImg} className="mr-3 w-full h-full" alt="Reena Mehta" />
           </a>
-          <div className="flex items-center lg:order-2 ">
+          <div className="lg:hidden flex">
             <a href="#" onClick={() => setIsMenu(!isMenu)}><Image src={BarImg} alt="" /></a>
           </div>
           <div className={`justify-between items-center w-full lg:flex lg:w-auto lg:order-1 navigation-menu ${isMenu && 'active'}`}>
             <div className='navigation-menu-inner'>
               <ul className="flex flex-col lg:flex-row m-0">
                 <li>
-                  <a href="#" className="block active py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]" aria-current="page">Home</a>
+                  {/* <a href="#" className="block active py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]" aria-current="page">Home</a> */}
+                  <Link
+                    activeClass="active"
+                    to="home"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    onClick={() => setIsMenu(false)}
+                  >Home</Link>
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">About Us</a>
+                  <Link
+                    activeClass="active"
+                    to="about-us"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    onClick={() => setIsMenu(false)}
+                  >About us</Link>
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Songs</a>
+                  {/* <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Songs</a> */}
+                  <Link
+                    activeClass="active"
+                    to="songs"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    onClick={() => setIsMenu(false)}
+                  >Songs</Link>
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Collaborating</a>
+                  <Link
+                    activeClass="active"
+                    to="collaborating"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    onClick={() => setIsMenu(false)}
+                  >Collaborating</Link>
+                  {/* <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Collaborating</a> */}
                 </li>
                 <li>
-                  <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Gallery</a>
+                  <Link
+                    activeClass="active"
+                    to="gallery"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    duration= {500}
+                    className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]"
+                    onClick={() => setIsMenu(false)}
+                  >Gallery</Link>
+                  {/* <a href="#" className="block py-2 px-3 font-openSans text-black hover:text-primary_01 active:text-primary_01 text-[16px]">Gallery</a> */}
                 </li>
               </ul>
             </div>

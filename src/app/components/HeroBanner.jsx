@@ -73,9 +73,9 @@ export default function HeroBanner() {
           <div className='slider-wrapper mt-[52px]'>
             <Slider {...settings}>
               {
-                HeroBannerJSON.map((data) => {
+                HeroBannerJSON.map((data, key) => {
                   return (
-                    <HeroBannerCard item={data} />
+                    <HeroBannerCard item={data} key={key}/>
                   )
                 })
               }

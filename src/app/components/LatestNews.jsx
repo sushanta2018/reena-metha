@@ -30,9 +30,9 @@ export default function LatestNews() {
 
         <div className='slider-wrapper md:mx-[0px] mx-[-15px]'>
           <Slider {...settings}>
-             {LatestNewsJSON.map((data) => {
+             {LatestNewsJSON.map((data, key) => {
                 return (
-                  <NewsCard news={data}/>
+                  <NewsCard news={data} key={key}/>
                 )
               }
             )}

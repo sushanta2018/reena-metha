@@ -65,8 +65,8 @@ export default function Footer() {
             </li>
           </ul>
           <ul className="mt-[30px] flex items-center justify-center">
-            <li className="p-[5px]"><a href="#" className="p-[15px] rounded-[100%] bg-[rgba(194,88,88,0.16)] flex items-center justify-center text-[22px] w-[42px] h-[42px] text-black font-workSans font-medium"><i className="icon-instagram text-primary_01"></i></a></li>
-            <li className="p-[5px]"><a href="#" className="p-[15px] rounded-[100%] bg-[rgba(194,88,88,0.16)] flex items-center justify-center text-[22px] w-[42px] h-[42px] text-black font-workSans font-medium"><i className="icon-facebook text-primary_01"></i></a></li>
+            <li className="p-[5px]"><a href="https://instagram.com/reens_mehta?igshid=NzZlODBkYWE4Ng==" target="_blank" className="p-[15px] rounded-[100%] bg-[rgba(194,88,88,0.16)] flex items-center justify-center text-[22px] w-[42px] h-[42px] text-black font-workSans font-medium"><i className="icon-instagram text-primary_01"></i></a></li>
+            <li className="p-[5px]"><a href="https://www.facebook.com/reenamehtasinger?mibextid=ZbWKwL" target="_blank" className="p-[15px] rounded-[100%] bg-[rgba(194,88,88,0.16)] flex items-center justify-center text-[22px] w-[42px] h-[42px] text-black font-workSans font-medium"><i className="icon-facebook text-primary_01"></i></a></li>
             <li className="p-[5px]"><a href="#" className="p-[15px] rounded-[100%] bg-[rgba(194,88,88,0.16)] flex items-center justify-center text-[22px] w-[42px] h-[42px] text-black font-workSans font-medium"><i className="icon-youtube text-primary_01"></i></a></li>
             
           </ul>
